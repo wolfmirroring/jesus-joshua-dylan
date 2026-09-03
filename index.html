@@ -22,12 +22,112 @@
     <h2>Nuestros Servicios</h2>
     <p>TODO: Lista o descripción de 3 servicios/productos</p>
   </section>
+<style>
+  #servicios {
+    background: #F2E6D8;
+    color: #3E2418;
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+  }
 
-  <!-- INTEGRANTE 3: completa esta seccion de Contacto -->
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <p>TODO: Información de contacto ficticia (dirección, teléfono, redes)</p>
-  </section>
+  #servicios::before {
+    content: "☕";
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.05;
+    bottom: -50px;
+    left: -30px;
+  }
+
+  #servicios .eyebrow {
+    font-family: Arial, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #A9752E;
+    margin-bottom: 12px;
+  }
+
+  #servicios h2 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+  #servicios h2 span {
+    color: #A9752E;
+    font-style: italic;
+  }
+
+  #servicios .grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #servicios .servicio-card {
+    background: #FFFFFF;
+    border: 1px solid #E3D2BC;
+    border-radius: 4px;
+    padding: 34px 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  #servicios .servicio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(44, 24, 16, 0.12);
+  }
+
+  #servicios .servicio-card .icono {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  #servicios .servicio-card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #2C1810;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  #servicios .servicio-card p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #5C4433;
+    line-height: 1.6;
+  }
+</style>
+
+<section id="servicios">
+  <p class="eyebrow">Lo que ofrecemos</p>
+  <h2>Nuestros <span>Servicios</span></h2>
+
+  <div class="grid-servicios">
+    <div class="servicio-card">
+      <span class="icono">☕</span>
+      <h3>Café de especialidad</h3>
+      <p>Granos seleccionados de origen único, tostados en pequeños lotes para resaltar cada perfil de sabor.</p>
+    </div>
+
+    <div class="servicio-card">
+      <span class="icono">🥐</span>
+      <h3>Repostería artesanal</h3>
+      <p>Panadería y repostería horneada a diario, pensada para acompañar cada bebida a la perfección.</p>
+    </div>
+
+    <div class="servicio-card">
+      <span class="icono">📚</span>
+      <h3>Espacio para trabajar y estudiar</h3>
+      <p>Wifi gratuito, ambiente tranquilo y mesas cómodas para quienes buscan un lugar productivo.</p>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
